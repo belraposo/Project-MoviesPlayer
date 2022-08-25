@@ -1,50 +1,49 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-.box-links {
-  margin-top: 1rem;
+nav {
   padding: 1rem;
-  background-color: transparent;
+  width: 100%;
+  background-color: #070707;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-  font-weight: 900;
+  justify-content: flex-start;
 
-  input {
-    width: 18rem;
-    margin: 5px 0;
-    padding: 10px 16px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 5px;
+  h2 {
+    font-size: 2rem;
+    margin-left: 150px;
+    text-shadow: 0 1px 0px #005386, 1px 0 0px #238DCC, 1px 2px 1px #005386, 2px 1px 1px #238DCC, 2px 3px 2px #005386, 3px 2px 2px #238DCC, 3px 4px 2px #005386, 4px 3px 3px #238DCC, 4px 5px 3px #005386, 5px 4px 2px #238DCC, 5px 6px 2px #005386, 6px 5px 2px #238DCC, 6px 7px 1px #005386, 7px 6px 1px #238DCC, 7px 8px 0px #005386, 8px 7px 0px #238DCC;
     color: white;
-    font-size: 20px;
-    transition: 0.3s ease;
-
-    :hover{
-      border: 1px solid #55D5F8;
-    }
-
-    ::placeholder {
-      font-size: 20px;
-      color: white;
-    }
-
-    :focus {
-      border: 1px solid #55D5F8;
-    }
   }
 
-  a {
+  .box-links {
+    margin-left: 20px;
+    padding: 5px;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 900;
+    }
+}
+
+  a{
     text-decoration: none;
-    transition: 0.5s ease;
-    text-shadow: #0F5AC1 0px 0px 5px, #0F5AC1 0px 0px 10px, #0F5AC1 0px 0px 15px, #1AC1FF 0px 0px 20px, #1AC1FF 0px 0px 30px, #1AC1FF 0px 0px 40px, #1AC1FF 0px 0px 50px, #1AC1FF 0px 0px 75px;
-    color: #FFFFFF;
+  }
+
+  h4 {
+    color: white;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    border-left: 2px solid #005386;
+    transition: 0.25s ease-in;
 
     :hover {
-      transform: scale(1.1);
+      text-shadow: 2px 2px 0 #005386, 4px 4px 0 #238DCC;
+      color: white;
     }
   }
-}
 `

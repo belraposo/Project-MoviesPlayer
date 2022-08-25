@@ -5,19 +5,20 @@ import Shows from './components/Shows/Shows';
 import GlobalStyle from './GlobalStyle';
 import { Container } from './style';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
 class App extends React.Component {
   render() {
     return(
       <Container>
       <GlobalStyle />
       <Router>
-        <div className='box-links'>
-          <Link to='/'> <h4> HOME </h4> </Link>
-          <Link to='/movies'> <h4> FILMES </h4> </Link>
-          <Link to='/shows'> <h4> SÉRIES </h4> </Link>
-          <input type='text' placeholder='Pesquisar'/>
-        </div>
+        <nav>
+          <h2> BeoziTV </h2>
+          <div className='box-links'>
+            <Link to='/'> <h4> HOME </h4> </Link>
+            <Link to='/movies'> <h4> FILMES </h4> </Link>
+            <Link to='/shows'> <h4> SÉRIES </h4> </Link>
+          </div>
+        </nav>
         <Routes>
           <Route path='/shows' element={<Shows/>} />
           <Route path='/movies' element={<Movies/>} />
