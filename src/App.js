@@ -56,6 +56,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(window.location)
     return(
       <Container>
       <GlobalStyle />

@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
+  background-color: white;
 
   header {
     padding: 3rem;
