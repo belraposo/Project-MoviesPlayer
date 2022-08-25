@@ -8,4 +8,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
   }
+
+  body {
+    background-color: #070707;
+  }
 `;

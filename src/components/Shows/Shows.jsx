@@ -1,43 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 import { Container } from './style';
 
-const API = axios.create({
-  baseURL : 'https://api.themoviedb.org/3/tv' 
-});
-export default class Series extends React.Component {
-  state = {
-    series: []
-  }
-
-  getSeries = async () => {
-    const response = await API.get('popular?api_key=cb885258165379dc7088a315eb854018&language=pt-BR&page=1')
-      console.log(response);
-
-    const allSeries = response.data.results.map(item => {
-      return{
-        titulo : item.name,
-        sinopse: item.overview,
-        imagem: `https://image.tmdb.org/t/p/w300/${item.poster_path}`,
-        nota: item.vote_average,
-        votos: item.vote_count,
-        data: item.release_date
-      }
-    })
-    this.setState({series: allSeries})
-    console.log(response.data.results)
-  }
-
-  componentDidMount() {
-    this.getSeries();
-  }
+class Series extends React.Component {
 
   render() {
     return (
       <Container>
         <h1 onClick={this.getSeries}> Séries </h1>
           <div className='box-serie'>
-            {this.state.series.map(item => (
+            {this.props.shows.map(item => (
             <div>
               <div className='box-about'>
                 <h2> {item.titulo} </h2>
@@ -54,3 +25,5 @@ export default class Series extends React.Component {
     );
   }
 }
+
+export default Series;

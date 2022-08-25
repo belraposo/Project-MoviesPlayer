@@ -35,16 +35,6 @@ export const Container = styled.div`
         font-size: 26px;
       }
     }
-
-    input {
-      border: none;
-      padding: 14px 350px 14px 15px;
-      border-radius: 2em;
-
-      ::placeholder {
-        font-size: 15px;
-      }
-    }
   }
 
   main {

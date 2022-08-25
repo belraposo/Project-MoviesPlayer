@@ -29,7 +29,6 @@ class Home extends React.Component {
     this.getMovies();
   }
 
-
   render() {
     return(
       <Container>
@@ -38,7 +37,6 @@ class Home extends React.Component {
             <h1>Olá, viewer!</h1>
             <p> Seja bem vindo(a) ao BeoziTV, assista séries e filmes de onde você estiver!</p>
           </div>
-            <input type='text' placeholder='Buscar: séries e filmes'/>
         </header>
         <main>
           <h2> Populares </h2>

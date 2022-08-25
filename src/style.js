@@ -17,7 +17,7 @@ nav {
   }
 
   .box-links {
-    margin-left: 20px;
+    margin: 0 20px 0 20px;
     padding: 5px;
     width: 100%;
     max-width: 250px;
@@ -46,4 +46,14 @@ nav {
       color: white;
     }
   }
+
+  input {
+      border: none;
+      padding: 10px 350px 10px 15px;
+      border-radius: 2em;
+
+      ::placeholder {
+        font-size: 15px;
+      }
+    }
 `
